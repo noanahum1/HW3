@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #9fd3e3;
+    margin: 0px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    align-items: center;
+}
+
+.title {
+    direction:rtl;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    padding-right: 8px ;
+}
+
+.disabled {
+  background-color: #eee;
+  color: #777;
+  cursor: not-allowed;
+}
+
+input, select {
+    padding: 1px;
+    margin: 2px;
+}
+
+.last_Row {
+    display: flex;
+    flex-direction: column; 
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 19%;
+}
+
+.gray_box {
+    display: flex;
+    flex-direction: row; /* Keep radio buttons in a row */
+    border-color: rgb(93, 93, 93);
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 3px; /* Add spacing between "מין" and gray box */
+    margin-right: 3px;
+    width: 97%; /* Make gray_box slightly narrower than last_Row */
+}

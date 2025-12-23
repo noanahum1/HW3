@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101</title>
+    <link rel="stylesheet" href="101 - Start.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h2 class="title">טופס 101 המכללה האקדמית</h2>
+        <p class="title" style="color: red;">שדות נדרשים מסומנים ב *</p>
+
+        <form class="form" action="http://example.com" method="get" target="_blank">
+
+            <div class="row">
+                <label>שנת מס &gt;</label>
+                <input type="text" value="2023" readonly class="disabled" required>
+            </div>
+
+            <div class="row">
+                <label>פרטי המעסיק</label>
+            </div>
+
+            <div class="row">
+                <label>שם &gt;</label>
+                <input type="text" value="המכללה האקדמית" required>
+                <label>כתובת &gt;</label>
+                <input type="text" value="רבנו ירוחם 2" required>
+                <label>מספר טלפון &gt;</label>
+                <input type="text" value="*6086" maxlength="10" required>
+                <label>תיק ניכויים &gt;</label>
+                <input type="number" value="900000000" maxlength="15" required>
+            </div>
+
+            <div class="row">
+                <label>פרטי העובד</label>
+            </div>
+
+            <div class="row">
+                <label>שם פרטי &gt;</label>
+                <input type="text" required> *
+                <label>שם משפחה &gt;</label>
+                <input type="text" required> *
+            </div>
+
+            <div> זיהוי על פי * </div>
+            <div class="row">
+                <label>
+                    <input type="radio" name="זיהוי לפי"> תעודת זהות 
+                </label>
+                <label>
+                    <input type="radio" name="זיהוי לפי"> דרכון (עבור אזרח אחר)
+                </label>
+            </div>
+
+            <div class="row">
+                <label>מספר זהות &gt;</label>
+                <input type="text" maxlength="10" name="id" required>
+                <label>צילום תעודת זהות </label>
+                <input type="file" name="idPic">
+            </div>
+
+            <div class="row">
+                <label>תאריך לידה </label>
+                <input type="date" name="birthdate" required> * 
+                <label>תאריך עלייה </label>
+                <input type="date" name="immigrationDate" required> *
+            </div>
+
+            <div class="row">
+                <label>יישוב </label>
+                <select name="city" required>
+                    <option value="" disabled selected>בחר יישוב</option>
+                    <option value="ירושלים">ירושלים</option>
+                    <option value="תל אביב">תל אביב</option>
+                    <option value="חיפה">חיפה</option>
+                    <option value="באר שבע">באר שבע</option>
+                    <option value="רמת גן">רמת גן</option>
+                </select> *
+
+                <label>רחוב </label>
+                <select name="street" required>
+                    <option value="" disabled selected>בחר רחוב</option>
+                    <option value="ז'בוטינסקי">ז'בוטינסקי</option>
+                    <option value="דיזינגוף">דיזינגוף</option>
+                    <option value="אלי כהן">אלי כהן</option>
+                    <option value="אבן גבירול">אבן גבירול</option>
+                    <option value="נעמי שמר">נעמי שמר</option>
+                </select> *
+
+                <label>מספר בית &gt;</label>
+                <input type="text" maxlength="3" name="homeNumber" required> *
+
+                <label>מיקוד &gt;</label>
+                <input type="text" maxlength="9" name="postcode" required> *
+            </div>
+
+            <div class="row">
+                <label>מספר טלפון נייד &gt;</label>
+                <input type="text" maxlength="10" name="phomeNum" required> *
+                <label>מספר טלפון &gt;</label>
+                <input type="text" maxlength="10" name="homeNum" required> 
+            </div>
+
+            <div class="row">
+                <label>כתובת דואר אלקטרוני &gt;</label>
+                <input type="text" maxlength="30" name="email" required> *
+            </div>
+
+            <div class="last_Row" >
+                <label>מין</label>   
+                <div class="gray_box"> 
+                    <label>
+                        <input type="radio" name="gender"> זכר 
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"> נקבה
+                    </label> 
+                </div>
+            </div>
+
+            <div class="last_Row" >
+                <label>מצב משפחתי</label>   
+                <div class="gray_box"> 
+                    <label>
+                    <input type="radio" name="maritalStatus"> רווק/ה 
+                    </label>
+                    <label>
+                        <input type="radio" name="maritalStatus"> נשוי/אה
+                    </label>
+                    <label>
+                        <input type="radio" name="maritalStatus"> גרוש/ה
+                    </label> 
+                    <label>
+                        <input type="radio" name="maritalStatus"> אלמן/ה
+                    </label> 
+                </div>  
+            </div>
+
+            <div class="last_Row" >
+                <label>תושב ישראל</label>   
+                <div class="gray_box"> 
+                    <label>
+                    <input type="radio" name="isIsraeli"> כן 
+                    </label>
+                    <label>
+                        <input type="radio" name="isIsraeli"> לא
+                    </label> 
+                </div>  
+            </div>
+
+            <div class="last_Row" >
+                <label>חבר קיבוץ</label>   
+                <div class="gray_box"> 
+                    <label>
+                    <input type="radio" name="isKibutz"> כן 
+                    </label>
+                    <label>
+                        <input type="radio" name="isKibutz"> לא
+                    </label> 
+                </div>  
+            </div>
+
+            <div class="last_Row" >
+                <label>קופת חולים</label>   
+                <div class="gray_box"> 
+                    <label>
+                    <input type="radio" name="kupatHolim"> מכבי 
+                    </label>
+                    <label>
+                        <input type="radio" name="kupatHolim"> כללית
+                    </label> 
+                    <label>
+                    <input type="radio" name="kupatHolim"> מאוחדת 
+                    </label>
+                    <label>
+                        <input type="radio" name="kupatHolim"> לאומית
+                    </label> 
+                </div>  
+            </div>
+
+            <input type="submit" value="שלח טופס">
+            <input type="button" value="אפס">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
